@@ -35,7 +35,7 @@ void waitSecs(int Secs)
     using std::chrono::system_clock;
     std::time_t tt = system_clock::to_time_t(system_clock::now());
     struct std::tm* ptm = std::localtime(&tt);
-    std::this_thread::sleep_for(std::chrono::seconds(3));
+    std::this_thread::sleep_for(std::chrono::seconds(Secs));
 }
 
 void ToggleStatus(int PinNumber) {
