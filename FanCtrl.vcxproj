@@ -52,8 +52,8 @@
       <LibraryDependencies>wiringPi</LibraryDependencies>
     </Link>
     <RemotePostBuildEvent>
-      <Command>gpio export 17 out</Command>
-      <Message>exporte el pin 17 con la utilidad GPIO para poder ejecutar el programa de parpadeo sin sudo</Message>
+      <Command>gpio export 17 out | gpio export 18 out | gpio export 22 out | gpio export 23 out</Command>
+      <Message>Export Pins</Message>
     </RemotePostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
@@ -61,8 +61,8 @@
       <LibraryDependencies>wiringPi</LibraryDependencies>
     </Link>
     <RemotePostBuildEvent>
-      <Command>gpio export 17 out</Command>
-      <Message>exporte el pin 17 con la utilidad GPIO para poder ejecutar el programa de parpadeo sin sudo</Message>
+      <Command>gpio export 17 out | gpio export 18 out | gpio export 22 out | gpio export 23 out</Command>
+      <Message>Export Pins</Message>
     </RemotePostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
